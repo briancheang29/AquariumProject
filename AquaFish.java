@@ -57,7 +57,7 @@ public class AquaFish
     {
         // Use the two-parameter constructor for the real initialization,
         // specifying that the default color should be Color.WHITE.
-        this(aqua, Color.WHITE);
+        this(aqua, Color.red);
     }
 
     /**

@@ -50,11 +50,11 @@ public class Aquarium
         if (width > 0)
             myWidth = width;
         else
-            myWidth = 640;
+            myWidth = 100;
         if (height > 0)
             myHeight = height;
         else
-            myHeight = 480;
+            myHeight = 200;
 
         borderPadding = 10;
 

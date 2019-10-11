@@ -33,7 +33,7 @@ public class AquaSimApplication
         randNum = generator.nextInt(10);
         // Construct the aquarium.  Specify its dimensions when creating it.
         Aquarium aqua;                 // create reference to an Aquarium ...
-        aqua = new Aquarium(700, 400); // ... object that has now been created
+        aqua = new Aquarium(1000, 700); // ... object that has now been created
 
         // Construct fish and add them to the aquarium.
         //      CODE MISSING HERE!
@@ -49,7 +49,7 @@ public class AquaSimApplication
         // the simulation.  The user interface needs to know about the
         // aquarium, so we pass aqua to the user interface constructor.
         AquaSimGUI userInterface;              // create reference to GUI ...
-        userInterface = new AquaSimGUI(aqua);  // ... and then GUI itself
+        userInterface = new AquaSimGUI(aqua, true);  // ... and then GUI itself
 
         // Tell the user how to start the aquarium simulation.
         System.out.println("Press the Start button to start the simulation.");
@@ -65,7 +65,7 @@ public class AquaSimApplication
 
         // Make the fish move and redisplay.
         //      CODE MISSING HERE!
-        for(;;)
+        for(int steps=0 ; steps<userInterface.getNumberOfSteps() ; steps++)
         {
         if(nemo.atWall())
             nemo.changeDir();
